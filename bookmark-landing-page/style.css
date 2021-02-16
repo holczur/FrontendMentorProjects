@@ -58,7 +58,8 @@ nav {
     .nav-list.desktop li:hover {
         color: var(--soft-red);
     }
-    
+
+     
     #desktop-nav-login {
         border: none;
         border-radius: 8px;
@@ -145,6 +146,7 @@ nav {
 
 .fa-times, .fa-bars{
     font-size: 22px;
+    cursor: pointer;
 }
 
 .nav-menu ul {
@@ -161,6 +163,7 @@ nav {
     padding: 25px;
     border-top: 1px solid var(--grayish-blue);
     width: 80vw;
+    cursor: pointer;
 }
 
 .nav-menu ul li:last-of-type {
@@ -179,12 +182,14 @@ nav {
     font-weight: 600;
     letter-spacing: 3px;
     margin-top: 1rem;
+    cursor: pointer;
 }
 
 nav .social-media {
     position: absolute;
     bottom: 60px;
     transform: scale(1.2);
+    cursor: pointer;
 }
 
 nav .social-media svg {
@@ -203,20 +208,68 @@ i.hide {
 }
 
 
+figure {
+    display: block;
+    margin: auto;
+    position: relative;
+}
 
 .illustration {
-    display: block;
-    width: 80vw;
     max-width: 80vw;
     height: auto;
     margin: 5rem auto 2rem auto;
 }
 
+.blue-bg {
+    background-color: var(--soft-blue);
+    height: 50%;
+    width: 90vw;
+    border-radius: 100px 0 0 100px;
+    position: absolute;
+    top: 190px;
+    left: 80px;
+    z-index: -10;
+}
 
 
 
+h1 , h2, h3, h4, p {
+    text-align: center;
+}
 
+h1 {
+    font-size: 34px;
+    font-weight: 500;
+    margin-top: 5rem;;
+}
 
+.buttons {
+    margin-top: 2rem;
+    width: 90vw;
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn {
+    border: none;
+    border-radius: 8px;
+    background-color: #f7f7f7;
+    color: #5d5d5d;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 18px 5px;
+    margin: 0 8px;
+    width: 160px;
+    box-shadow: rgba(0,0,0,0.1) 0 3px 8px;
+}
+
+.btn-active {
+    background-color: var(--soft-blue);
+    color: white;
+}
 
 
 
