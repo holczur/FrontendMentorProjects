@@ -59,7 +59,7 @@
                     <li class="mobile-nav-item uppercase" role="button">Pricing</li>
                     <li class="mobile-nav-item uppercase" role="button">Contact</li>
                 </ul>
-                <button id="mobile-nav-login" class="btn btn-transparent btn-wide mx-a uppercase">Login</button>
+                <button id="mobile-nav-login" class="btn btn-transparent btn-wide uppercase">Login</button>
                 
                 <div class="social-media">
                     <svg class="social-media-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24">
@@ -86,7 +86,7 @@
                     alt="Graphic with simple shapes about a browser window in a tablet" class="illustration illu-1">
                 <div class="blue-bg"></div>
             </figure>
-            <div class="unit mt-3 flex-col-center">
+            <div class="unit mt-3 w-80 flex-col-center">
                 <h1 class="main-title left">A Simple Bookmark Manager</h1>
                 <p class="description left">A clean and simple interface to organize your favourite websites. Open a new
                     browser
@@ -99,50 +99,34 @@
         </section>
         <section id="features">
             <h2>Features</h2>
-            <p id="feature-overview" class="description">Our aim is to make it quick and easy for you to access your
+            <p id="features-overview" class="description mb-3 w-80">Our aim is to make it quick and easy for you to access your
                 favourite websites. Your bookmarks sync between your devices so you can access them on the go.</p>
 
-            <div id="feature-links">
-                <div class="wrap">
-                    <a href="#" class="active">Simple Bookmarking</a>
-                </div>
-                <div class="wrap">
-                    <a href="#">Speedy Searching</a>
-                </div>
-                <div class="wrap">
-                    <a href="#">Easy Sharing</a>
-                </div>
-            </div>
+            <ul id="feature-links">
+                <li id="simple" class="feature-link active" role="button">Simple Bookmarking</li>
+                <li id="speedy" class="feature-link" role="button">Speedy Searching</li>
+                <li id="easy" class="feature-link" role="button"> Easy Sharing</li>
+            </ul>
+            <figure id="feature-img">
+                <img id="changing-img" src="./img/illustration-features-tab-1.svg"
+                    alt="Graphic with simple shapes about a browser window" class="illustration mb-3 mt-5">
+                <div class="blue-bg2"></div>
+            </figure>
 
-            <div id="feature-details">
+            <div id="feature-details" class="w-80">
                 <div id="feature-easy" class="feature">
-                    <figure>
-                        <img src="./img/illustration-features-tab-1.svg"
-                            alt="Graphic with simple shapes about a browser window" class="illustration">
-                        <div class="blue-bg2"></div>
-                    </figure>
                     <h2>Bookmark in one click</h2>
                     <p class="description">Organize your bookmarks however you like. Our simple drag-and-drop interface
                         gives you complete control over how you manage your favourite sites.</p>
                     <button class="btn hide">More info</button>
                 </div>
                 <div id="feature-search" class="feature hide">
-                    <figure>
-                        <img src="./img/illustration-features-tab-2.svg"
-                            alt="Graphic with simple shapes about a browser window and a magnifying glass"
-                            class="illustration">
-                    </figure>
                     <h2>Intelligent search</h2>
                     <p class="description">Our powerful search feature will help you find saved sites in no time at all.
                         No need to trawl through all of your bookmarks. More Info</p>
                     <button>More info</button>
                 </div>
                 <div id="feature-share" class="feature hide">
-                    <figure>
-                        <img src="./img/illustration-features-tab-3.svg"
-                            alt="graphic about a browser and two people who are in connection trough internet"
-                            class="illustration">
-                    </figure>
                     <h2>Share your bookmarks</h2>
                     <p class="description">Easily share your bookmarks and collections with others. Create a shareable
                         link that you can send at the click of a button.</p>
