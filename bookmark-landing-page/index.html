@@ -39,7 +39,7 @@
                 </ul>
             </div>
 
-            <div id="open-nav" class="open-nav unvisible">
+            <div id="open-nav" class="open-nav hide unvisible">
                 <div class="nav-head flex-row-between my-3 mx-a">
                     <svg width="148" height="25" xmlns="http://www.w3.org/2000/svg">
                         <g fill="none" fill-rule="evenodd">
@@ -167,23 +167,23 @@
                 </div>
             </div>
         </section>
-        <section id="faq">
+        <section id="faq" class="mb-10 w-80">
             <h2>Frequently Asked Questions</h2>
-            <p class="description">Here are some of our FAQs. If you have any other questions you’d like answered please
+            <p class="description faq-description mb-3">Here are some of our FAQs. If you have any other questions you’d like answered please
                 feel free to email us.</p>
-            <div class="faqs">
-                <div class="faq-holder">
-                    <div class="question">
+            <div class="faqs mb-3">
+                <div class="faq-holder flex-col-center">
+                    <div class="question flex-row-between">
                         <p>What is Bookmark?</p>
-                        <i class="fas fa-chevron-up"></i>
+                        <i class="fas fa-chevron-down"></i>
                     </div>
-                    <div class="answer">
+                    <div class="answer hide">
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt justo eget ultricies
                             fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                     </div>
                 </div>
-                <div class="faq-holder">
-                    <div class="question">
+                <div class="faq-holder flex-col-center">
+                    <div class="question flex-row-between">
                         <p>How can I request a new browser?</p>
                         <i class="fas fa-chevron-down"></i>
                     </div>
@@ -192,8 +192,8 @@
                             fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                     </div>
                 </div>
-                <div class="faq-holder">
-                    <div class="question">
+                <div class="faq-holder flex-col-center">
+                    <div class="question flex-row-between">
                         <p>Is there a mobile app?</p>
                         <i class="fas fa-chevron-down"></i>
                     </div>
@@ -202,8 +202,8 @@
                             fringilla. Phasellus blandit ipsum quis quam ornare mattis.</p>
                     </div>
                 </div>
-                <div class="faq-holder">
-                    <div class="question">
+                <div class="faq-holder flex-col-center">
+                    <div class="question flex-row-between">
                         <p>What about other Chromium browsers?</p>
                         <i class="fas fa-chevron-down"></i>
                     </div>
@@ -213,7 +213,7 @@
                     </div>
                 </div>
             </div>
-            <button class="btn btn-active">More info</button>
+            <button class="btn btn-blue">More info</button>
         </section>
         <section id="jumbotron">
             <p>35,000+ already joined</p>
