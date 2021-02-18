@@ -14,8 +14,18 @@ body {
     font-family: 'Rubik', sans-serif;
     font-size: 18px;
     color: var(--dark-blue);
+    line-height: 1.5;
     width: 90vw;
     margin: 0 auto;
+}
+
+h1, h2, h3, h4 {
+    font-weight: 500;
+    text-align: center;
+}
+
+h1 {
+    font-size: 32px;
 }
 
 li {
@@ -25,6 +35,10 @@ li {
 ul {
     margin: 0;
     padding: 0;
+}
+
+figure {
+    margin: auto;
 }
 
 .flex-row-between {
@@ -46,6 +60,14 @@ ul {
 
 .mb-2 {
     margin-bottom: 2rem;
+}
+
+.mb-5 {
+    margin-bottom: 5rem;
+}
+
+.mb-10 {
+    margin-bottom: 10rem;
 }
 
 
@@ -81,6 +103,8 @@ ul {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color: var(--dark-blue);
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .btn-red {
@@ -89,6 +113,11 @@ ul {
     letter-spacing: 2px;
     font-weight: 500;
     font-size: 18px;
+}
+
+.btn-blue{
+    background-color: var(--soft-blue);
+    color: white;
 }
 
 .btn-transparent {
@@ -112,9 +141,15 @@ ul {
     cursor: pointer;
 }
 
+/* GENERAL STYLING ENDS HERE ********************************************************/
+
 .closed-nav {
     width: 80vw;
     text-align: center;
+}
+
+#open {
+    z-index: 10;
 }
 
 #nav-logo {
@@ -147,6 +182,7 @@ ul {
     opacity: .95;
     color: white;
     transition: all .5s ease-in;
+    z-index: 2;
 }
 
 .nav-head {
@@ -154,7 +190,7 @@ ul {
 }
 
 .mobile-nav-item {
-    padding: 20px;
+    padding: 30px;
     text-transform: uppercase;
     letter-spacing: 2px;
     border-top: 1px solid var(--grayish-blue);
@@ -183,6 +219,40 @@ ul {
     font-size: 18px;
 }
 
+/* NAVBAR ENDS - INTRO SECTION STARTS HERE ******************************************************************/
+
+#hero {
+    position: relative;
+    overflow: hidden;
+    margin: 0;
+    width: 100vw;
+}
+
+.illustration {
+    width: 80vw;
+}
+
+.illu-1 {
+    width: 90vw;
+}
+
+.blue-bg {
+    width: 80%;
+    height: 60%;
+    background-color: var(--soft-blue);
+    border-radius: 100px 0 0 100px;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -10;
+}
+
+.description {
+    color: var(--grayish-blue);
+    text-align: center;
+}
+
+
 
 
 @media screen and (min-width: 700px) {
@@ -193,9 +263,44 @@ ul {
     #open {
         display: none;
     }
+
+    #intro {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+        width: 100vw;
+    }
+
+    #hero {
+        width: 50vw;
+    }
+
+    .unit {
+        width: 40vw;
+        margin-right: 5rem;
+    }
+
+    .unit .left {
+        text-align: left;
+    }
+
+
+
+
+    .illu-1 {
+        width: 40vw;
+        order: 2;
+    }
+
+    .buttons {
+        margin-left: 0;
+    }
+
 }
 
 
+/* MEDIA RULES ENDS HERE ***************************/
 
 .unvisible {
     height: 0;
@@ -206,7 +311,4 @@ ul {
     display: none;
 }
 
-#open {
-    z-index: 10;
-}
 
