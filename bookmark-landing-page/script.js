@@ -63,3 +63,26 @@ for (let i = 0; i < faqs.length; i++) {
         }
     })
 }
+
+
+/* EMAIL VALIDATION *********************************************************/
+
+const form = document.getElementById('form')
+const error = document.querySelector('.error')
+const errorSign = document.querySelector('.error-sign')
+const email = document.getElementById('email')
+
+form.addEventListener('invalid', (e) => {
+    e.preventDefault();
+    error.classList.remove('hide');
+    errorSign.classList.remove('hide');
+    email.classList.add('invalid')
+    window.addEventListener('click', () => {
+        error.classList.add('hide');
+        errorSign.classList.add('hide')
+        if (!email.value){
+            email.classList.remove('invalid');
+        }
+    })
+
+}, true)

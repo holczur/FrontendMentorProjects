@@ -319,7 +319,7 @@ figure {
 }
 
 .feature-link:hover {
-    font-size: 20px;
+    color: var(--dark-blue);
 }
 
 
@@ -332,12 +332,12 @@ figure {
     padding-bottom: 17px;
 }
 
-.feature-link:after {
+.feature-link::after {
     content:"";
     width: 0;
 }
 
-.feature-link.active:after {
+.feature-link.active::after {
     content:"";
     border-bottom: 3px solid var(--soft-red);
     display: block;
@@ -401,6 +401,124 @@ h3 {
     display: inline;
 }
 
+/* FAQ SECTION ENDS - JUMBOTRON SECTION STARTS HERE **************************************/
+
+#jumbotron {
+    background-color: var(--soft-blue);
+    color: white;
+    padding: 5rem 3rem;
+    margin: auto;
+    text-align: center;
+}
+
+.form-wrap {
+    position: relative;
+}
+
+#jumbotron .btn-red {
+    padding: 9px;
+    font-weight: 400;
+    margin-top: 40px;
+}
+
+[type="email"] {
+    padding: 12px;
+    border-radius: 5px;
+    border: 2px solid transparent;
+}
+
+.invalid {
+    border: 2px solid var(--soft-red);
+}
+
+.error {
+    font-style: italic;
+    font-size: 12px;
+    text-align: left;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    position: absolute;
+    width: 80vw;
+    padding:  10px 5px 5px 5px;
+    top: 38px;
+}
+
+.error-sign {
+    position: absolute;
+    color: var(--soft-red);
+    font-size: 22px;
+    top: 10px;
+    right: 0;
+
+}
+
+
+.join {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+h4 {
+    font-size: 28px;
+}
+
+/* JUMBOTRON ENDS - FOOTER STRARTS HERE ************************************************************/
+
+footer {
+    background: var(--dark-blue);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 3rem;
+}
+
+.footer-link {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    padding: 5px;
+    margin-top: 1rem;
+}
+
+.footer-social-media {
+    margin: 2rem 0;
+    
+}
+
+.social-media-logo {
+    margin: 15px;
+    cursor: pointer;
+}
+
+.social-media-logo:hover {
+    filter: invert(0.4) sepia(1) saturate(14) hue-rotate(312.2deg) brightness(1.04) contrast(15);
+}
+
+.footer-link:hover {
+    color: var(--soft-red);
+}
+
+
+
+.copyright {
+    font-size: 
+    10px;
+}
+
+.copyright a {
+    color: white;
+}
+
+
+
+
+
+/* FOOTER ENDS - MEDIA RULES STARTS HERE **********************************************************/
+
+
 
 
 
@@ -460,6 +578,11 @@ h3 {
         border-top: none;
         border-bottom: 1px solid var(--grayish-blue);
     }
+
+    .feature-link:hover {
+        color: var(--dark-blue);
+    }
+    
 
     .wrap {
         display: flex;
@@ -521,6 +644,35 @@ h3 {
         margin: 2rem auto 3rem auto;
     }
 
+    form {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40vw;
+        margin: auto;
+    }
+
+    [type="email"] {
+        padding: 17px;
+        border-radius: 5px;
+        border: none;
+        text-align: center;
+        margin: 0 10px;
+        width: 45%;
+    }
+    
+    #jumbotron .btn-red {
+        width: auto;
+        padding: 12px 5px;
+        margin: 0 10px;
+
+    }
+
+    h4 {
+        width: 20vw;
+        margin: 2rem auto;
+    }
+
 
 
 
@@ -538,7 +690,5 @@ h3 {
 }
 
 .hide {
-    display: none;
+    display: none !important;
 }
-
-
