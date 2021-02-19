@@ -12,6 +12,7 @@ const featureDescriptions = document.querySelectorAll('.feature')
 
 const faqs = document.querySelectorAll('.faq-holder')
 const chevrons = document.querySelectorAll('.faq-holder .fas')
+const answers = document.querySelectorAll('.answer')
 
 /* NAV MENU **************************************************/
 openBtn.addEventListener('click', () => {
@@ -54,6 +55,8 @@ for (let i = 0; i < featureLinks.length; i++){
 for (let i = 0; i < faqs.length; i++) {
     faqs[i].addEventListener('click', () => {
         faqs[i].classList.toggle('active');
+        answers[i].classList.toggle('hide');
+
         if (faqs[i].classList.contains('active')) {
             chevrons[i].classList.remove('fa-chevron-down');
             chevrons[i].classList.add('fa-chevron-up');
