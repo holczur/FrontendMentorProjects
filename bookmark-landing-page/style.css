@@ -115,12 +115,6 @@ figure {
     justify-content: flex-start;
 }
 
-.w-90 {
-    width: 90vw;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .w-80 {
     width: 80vw;
     margin-left: auto;
@@ -174,11 +168,6 @@ figure {
 .mx-a {
     margin-left: auto;
     margin-right: auto;
-}
-
-.px-2 {
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
 
 .uppercase {
@@ -529,7 +518,7 @@ footer {
 
 
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 1050px) {
     #desktop-nav {
         display: flex;   
     }
