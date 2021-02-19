@@ -51,8 +51,13 @@ figure {
     font-family: 'Rubik', sans-serif;
     font-size: 14px;
     color: var(--dark-blue);
-    margin: 5px
+    margin: 5px;
+    transition-duration: transform 0.4s;
 }
+  
+.btn:active {
+    transform: translateY(4px);
+  }
 
 .btn-red {
     background-color: var(--soft-red);
@@ -100,6 +105,8 @@ figure {
     align-items: center;
     justify-content: space-between;
 }
+
+
 
 .flex-col-center {
     display: flex;
@@ -425,6 +432,7 @@ h3 {
     padding: 12px;
     border-radius: 5px;
     border: 2px solid transparent;
+    display: block;    
 }
 
 .invalid {
@@ -439,7 +447,7 @@ h3 {
     border-radius: 5px;
     position: absolute;
     width: 80vw;
-    padding:  10px 5px 5px 5px;
+    padding: 10px 5px 5px 5px;
     top: 38px;
 }
 
@@ -448,8 +456,7 @@ h3 {
     color: var(--soft-red);
     font-size: 22px;
     top: 10px;
-    right: 0;
-
+    right: 10px;
 }
 
 
@@ -653,12 +660,9 @@ footer {
     }
 
     [type="email"] {
-        padding: 17px;
-        border-radius: 5px;
-        border: none;
-        text-align: center;
         margin: 0 10px;
-        width: 45%;
+        width: 300px;
+        min-width: 200px;
     }
     
     #jumbotron .btn-red {
@@ -672,6 +676,17 @@ footer {
         width: 20vw;
         margin: 2rem auto;
     }
+
+
+    .error {
+        width: 300px;
+        right: 10px
+    }
+    
+    .error-sign {
+        right: 20px;
+    }
+    
 
 
 
