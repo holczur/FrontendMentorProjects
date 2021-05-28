@@ -10,10 +10,12 @@ menuBtn.addEventListener('click', () => {
   menu.classList.toggle('hidden');
   openBtn.classList.toggle('hidden');
   closeBtn.classList.toggle('hidden');
+  overlay.classList.toggle('hide');
 });
 
 overlay.addEventListener('click', () => {
   menu.classList.add('hidden');
   openBtn.classList.remove('hidden');
   closeBtn.classList.add('hidden');
+  overlay.classList.add('hide');
 });
