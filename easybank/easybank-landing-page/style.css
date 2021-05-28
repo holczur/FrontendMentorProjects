@@ -17,6 +17,7 @@ body {
   font-family: 'Public Sans', sans-serif;
   color: var(--darkblue);
   margin: 0;
+  overflow-x: hidden;
 }
 
 nav {
@@ -24,6 +25,35 @@ nav {
   top: 0;
   width: 100vw;
   background-color: #fff;
+}
+
+.menu-btn {
+  position: relative;
+}
+
+.open,
+.close {
+  position: absolute;
+  top: calc(50% - 5px);
+  right: 50%;
+  transform: translateX(-50%);
+}
+
+.close {
+  top: -9px;
+  right: 6px;
+}
+
+.menu-overlay {
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 0.1) 10%,
+    hsla(233, 26%, 24%, 0.8) 70%
+  );
+  position: absolute;
+  z-index: -1;
 }
 
 .nav-header {
@@ -46,21 +76,13 @@ nav {
   transform: translateX(-50%);
   background-color: var(--very-light-gray);
   border-radius: 5px;
-  width: 90vw;
+  width: 80vw;
+  font-size: 18px;
+  padding: 20px 0;
 }
 
 .nav-item {
   padding: 15px;
-}
-
-.nav-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background-color: var(--darkblue);
-  opacity: 0.3;
 }
 
 header,
@@ -138,7 +160,8 @@ h3 {
   font-family: inherit;
 }
 
-.btn-invite:active {
+.btn-invite:active,
+.nav-item:active {
   transform: scale(0.98);
 }
 
@@ -241,4 +264,8 @@ footer {
 .copyright {
   color: var(--grayishblue);
   margin: 2rem 0 4rem 0;
+}
+
+.hidden {
+  display: none;
 }
