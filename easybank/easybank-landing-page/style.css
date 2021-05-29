@@ -377,7 +377,17 @@ footer {
     justify-content: center;
   }
 
+  .footer-container--btn {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
   .copyright {
     margin-bottom: 0;
+  }
+
+  .btn-invite {
+    margin: 0;
   }
 }
