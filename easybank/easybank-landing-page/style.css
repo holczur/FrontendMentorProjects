@@ -25,6 +25,22 @@ nav {
   top: 0;
   width: 100vw;
   background-color: #fff;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container--desktop {
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8rem;
+}
+
+.nav-links--desktop {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
 }
 
 .menu {
@@ -65,7 +81,7 @@ nav {
   opacity: 0;
 }
 
-.nav-header {
+.nav-container--mobile {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -286,6 +302,14 @@ footer {
 }
 
 @media (min-width: 1024px) {
+  .nav-container--mobile {
+    display: none;
+  }
+
+  .nav-container--desktop {
+    display: flex;
+  }
+
   header {
     flex-direction: row-reverse;
     margin-bottom: 2rem;
