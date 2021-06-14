@@ -6,13 +6,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Easybank</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <nav>
         <div class="nav-container">
-            <img src="./assets/logo.svg" alt="" class="img-logo">
+            <a href="./index.html"><img src="./assets/logo.svg" alt="" class="img-logo"></a>
             <ul class="nav-menu">
                 <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">About</a></li>
@@ -20,12 +22,18 @@
                 <li class="nav-item"><a class="nav-link" href="#">Blog</a></li>
                 <li class="nav-item"><a class="nav-link" href="#">Careers</a></li>
             </ul>
-            <div class="overlay hidden"></div>
+
+            <!-- add 'active' class later by JS' -->
+            <div class="overlay"></div>
+
             <button class="btn btn-request btn-request--nav">Request Invite</button>
-            <button class="btn-open"><img src="./assets/icon-hamburger.svg" alt=""></button>
-            <button class="btn-close hidden"><img src="./assets/icon-close.svg" alt=""></button>
+            <button class="btn-menu btn-menu--open"><img src="./assets/icon-hamburger.svg" alt=""></button>
+            <button class="btn-menu btn-menu--close hidden"><img src="./assets/icon-close.svg" alt=""></button>
         </div>
     </nav>
+
+
+    <!-- 
     <header>
         <div class="header-container--text">
             <h1>Next generation digital banking</h1>
@@ -140,7 +148,7 @@
         Coded by <a href="#">Norbert Holcz</a>.
     </div>
 
-
+ -->
     <script src="./script.js"></script>
 </body>
 
