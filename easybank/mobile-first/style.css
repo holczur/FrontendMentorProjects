@@ -151,6 +151,7 @@ body {
 /* --------- HEADER --------- */
 header {
   margin-bottom: 5rem;
+  overflow-x: hidden;
 }
 
 .header-container--img {
@@ -350,7 +351,7 @@ a.footer-nav--link {
   font-size: 14px;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1390px) {
   /* --------- NAV --------- */
   .btn-request--nav {
     display: inline-block;
@@ -475,7 +476,7 @@ a.footer-nav--link {
 
   .img-article {
     height: 200px;
-    width: 280px;
+    width: 290px;
     object-fit: cover;
   }
 
