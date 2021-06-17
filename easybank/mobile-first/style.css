@@ -14,8 +14,16 @@
   margin: 0;
 }
 
+ul {
+  list-style-type: none;
+}
+
 a {
   text-decoration: none;
+}
+
+a:visited {
+  color: var(--darkblue);
 }
 
 p {
@@ -28,6 +36,7 @@ body {
   color: var(--darkblue);
   margin: 0;
   overflow-x: hidden;
+  height: calc(100vh - 200px);
 }
 
 /* --------- NAVIGATION --------- */
@@ -44,7 +53,7 @@ body {
   z-index: 2;
 }
 
-img-logo {
+.logo {
   cursor: pointer;
 }
 
@@ -52,15 +61,15 @@ img-logo {
   width: 0;
   height: 0;
   opacity: 0;
-}
-
-.nav-menu.active {
   position: fixed;
   top: 80px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.nav-menu.active {
   background-color: #fff;
-  width: 80%;
+  width: 305px;
   height: 280px;
   border-radius: 5px;
   padding: 20px 0;
@@ -71,7 +80,7 @@ img-logo {
 .nav-item {
   list-style-type: none;
   text-align: center;
-  padding: 15px;
+  padding: 15px 0;
 }
 
 .nav-link {
@@ -96,7 +105,7 @@ img-logo {
     hsla(233, 26%, 24%, 0.8) 70%
   );
   position: fixed;
-  top: 0;
+  top: 55px;
   left: 0;
   opacity: 1;
   z-index: -1;
@@ -139,6 +148,10 @@ img-logo {
 }
 
 /* --------- HEADER --------- */
+header {
+  margin-bottom: 5rem;
+}
+
 .header-container--img {
   background-image: url(./assets/bg-intro-mobile.svg);
   background-repeat: no-repeat;
@@ -148,6 +161,7 @@ img-logo {
   align-self: center;
   justify-content: center;
   width: 100vw;
+  z-index: 1;
 }
 
 .img-mockup {
@@ -175,6 +189,166 @@ h1 {
   margin-bottom: 2rem;
 }
 
+/* --------- SECTION 1: REASONs --------- */
+
+.reasons {
+  background-color: var(--very-light-gray);
+  padding: 4rem 2rem 2rem 2rem;
+  text-align: center;
+  width: 100vw;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  max-width: 70%;
+  display: block;
+  margin: 2rem auto;
+}
+
+.reasons-cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.card > * {
+  margin: 0.5rem 0;
+}
+
+/* --------- SECTION 2: ARTICLES --------- */
+.articles {
+  padding: 4rem 2rem 2rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.img-article {
+  width: 95%;
+  border-radius: 5px;
+  margin: 0.5rem;
+  display: block;
+  align-self: center;
+}
+
+.article-card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+h4,
+.article-text,
+.author {
+  padding: 0.5rem 2rem;
+}
+
+h4 {
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.author {
+  font-size: 10px;
+}
+
+.article-text {
+  font-size: 12px;
+}
+
+/* --------- FOOTER --------- */
+footer {
+  background-color: var(--darkblue);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.footer-left--one {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-media {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding: 2rem;
+}
+
+.social-media-icon {
+  padding: 0 0.6rem;
+}
+
+.footer-nav {
+  text-align: center;
+}
+
+a.footer-nav--link {
+  color: #fff;
+  display: block;
+  font-weight: 300;
+  padding: 0.5rem 0;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-request--footer {
+  margin-bottom: 1.5rem;
+}
+
+.copyright {
+  font-size: 14px;
+}
+
+/* --------- ATTRIBUTION --------- */
+.attribution {
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  color: var(--grayish-blue);
+  padding: 2rem;
+}
+
+.fm-link {
+  text-decoration: underline;
+}
+
+.builder {
+  font-weight: bold;
+  font-size: 14px;
+}
+
 @media (min-width: 1024px) {
   /* --------- NAV --------- */
   .btn-request--nav {
@@ -196,6 +370,7 @@ h1 {
     height: auto;
     opacity: 1;
     display: flex;
+    top: 10px;
   }
 
   .nav-link {
@@ -218,11 +393,13 @@ h1 {
   }
 
   .nav-link:hover::after {
-    width: 100%;
+    width: 70%;
   }
 
   /* --------- HEADER --------- */
+
   header {
+    margin-bottom: 0;
     padding: 0 10rem;
     display: flex;
     flex-direction: row-reverse;
@@ -250,6 +427,110 @@ h1 {
     align-items: flex-start;
     max-width: 460px;
     flex-shrink: 0;
+  }
+
+  /* --------- SECTIONS --------- */
+  main,
+  footer,
+  .attribution {
+    transform: translateY(-250px);
+  }
+
+  .reasons {
+    text-align: left;
+    padding: 4rem 10rem;
+  }
+
+  .reasons-heading {
+    max-width: 600px;
+    margin-bottom: 4rem;
+  }
+
+  h2 {
+    margin: 2rem 0;
+  }
+
+  .reasons-cards {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    max-width: 15vw;
+    align-items: flex-start;
+  }
+
+  .articles {
+    padding: 4rem 10rem 2rem 10rem;
+  }
+
+  .articles h2 {
+    align-self: flex-start;
+  }
+
+  .article-cards--container {
+    display: flex;
+  }
+
+  .img-article {
+    height: 200px;
+    width: 280px;
+    object-fit: cover;
+  }
+
+  h4,
+  .author,
+  .article-text {
+    padding: 0.5rem 5rem;
+  }
+
+  /* --------- Footer --------- */
+  footer {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 10rem;
+  }
+
+  .footer-left {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footer-left--one {
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+  }
+
+  .social-media {
+    padding: 0;
+  }
+
+  .footer-nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: left;
+    margin-left: 15rem;
+  }
+
+  a.footer-nav--link {
+    padding: 0.7rem 0;
+  }
+
+  a.footer-nav--link:hover {
+    color: var(--limegreen);
+  }
+
+  .social-media-icon:hover {
+    filter: invert(17%) sepia(85%) saturate(3234%) hue-rotate(59deg)
+      brightness(87%) contrast(89%);
+  }
+
+  .footer-nav--container {
+    margin: 0 2rem;
   }
 }
 
